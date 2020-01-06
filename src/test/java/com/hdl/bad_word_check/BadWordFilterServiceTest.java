@@ -7,12 +7,14 @@ import org.springframework.boot.test.context.SpringBootTest;
 
 import static org.hamcrest.Matchers.is;
 import static org.junit.Assert.assertThat;
-
+/**
+ * 违禁词过滤 测试
+ * @Author HuangDL
+ */
 @SpringBootTest
 class BadWordFilterServiceTest {
     @Autowired
     BadWordFilterService badWordFilterService;
-
     @Test
     void 单个违禁词检查() {
         String badWord1 = "共产党好";
